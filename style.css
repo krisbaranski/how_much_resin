@@ -43,13 +43,18 @@ main {
   text-align: center;
   padding: 10px;
 }
+.value {
+  font-size: 2rem;
+  text-align: center;
+}
 
 .x,
 .y,
 .z {
   text-align: center;
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 2.5rem;
+  padding: 10px 0px;
+  margin: 10px 5px;
 }
 
 /* ELEMENTS STYLE */
@@ -93,6 +98,7 @@ header p {
   padding: 2rem;
   display: block;
   margin-right: 8rem;
+  width: 50rem;
 }
 
 .right p {
