@@ -12,14 +12,13 @@ let x = (document.querySelector('.x').value = '');
 let y = (document.querySelector('.y').value = '');
 let z = (document.querySelector('.z').value = '');
 
-console.log(x);
-
 // calculate button counting all together
 calc.addEventListener('click', function () {
   x = parseFloat(document.querySelector('.x').value);
   y = parseFloat(document.querySelector('.y').value);
   z = parseFloat(document.querySelector('.z').value);
-  const amount = (x * y * z) / 900;
+  const n = (x * y * z) / 900;
+  let amount = n.toFixed(2);
   if (amount > 0) {
     message.textContent = `Use ${amount} kg resin`;
   } else {
