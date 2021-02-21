@@ -19,7 +19,7 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 100px;
+  height: 120px;
   border-bottom: 5px solid rgb(199, 191, 191);
 }
 
@@ -134,8 +134,13 @@ header p {
 }
 
 @media only screen and (width: 620px) {
+  header {
+    position: relative;
+    height: 140px;
+  }
+
   main {
-    width: 620px;
+    width: 100%;
   }
 
   .left {
@@ -144,11 +149,18 @@ header p {
     align-items: center;
   }
 
+  .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+
   .right {
     position: relative;
     background: none;
     color: inherit;
     font-size: 30px;
-    padding: 2px;
+    padding: 10px;
   }
 }
