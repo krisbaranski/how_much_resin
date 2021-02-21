@@ -133,7 +133,7 @@ header p {
   background-color: rgb(122, 158, 199);
 }
 
-@media only screen and (max-device-width: 680px) {
+@media only screen and (max-device-width: 720px) {
   header {
     position: relative;
     height: 140px;
@@ -143,8 +143,30 @@ header p {
     width: 100%;
   }
 
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 30px rgb(20, 19, 19);
+  }
+
+  header p {
+    font-size: 1rem;
+    color: rgb(206, 171, 110);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .left {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
   }
@@ -162,5 +184,9 @@ header p {
     color: inherit;
     font-size: 30px;
     padding: 10px;
+  }
+
+  .right p {
+    font-size: 3rem;
   }
 }
