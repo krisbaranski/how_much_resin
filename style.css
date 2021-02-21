@@ -136,7 +136,7 @@ header p {
 @media only screen and (max-device-width: 720px) {
   header {
     position: relative;
-    height: 140px;
+    height: 100px;
   }
 
   main {
@@ -144,7 +144,7 @@ header p {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     position: relative;
     width: 100%;
@@ -155,7 +155,7 @@ header p {
   }
 
   header p {
-    font-size: 1rem;
+    font-size: 2.3rem;
     color: rgb(206, 171, 110);
     text-align: center;
     position: relative;
