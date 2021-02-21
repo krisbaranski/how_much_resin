@@ -13,6 +13,7 @@ let y = (document.querySelector('.y').value = '');
 let z = (document.querySelector('.z').value = '');
 
 // calculate button counting all together
+
 calc.addEventListener('click', function () {
   x = parseFloat(document.querySelector('.x').value);
   y = parseFloat(document.querySelector('.y').value);

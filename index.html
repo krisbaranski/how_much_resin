@@ -10,9 +10,10 @@
   <body>
     <header>
       <h1>How much resin?</h1>
-      <p>- use cm and decimals (.) -</p>
+      <p>- use cm and decimal . -</p>
     </header>
     <main>
+    <div class="contain">
       <section class="left">
         <div class="value">
           <input type="text" class="x">(length in cm)</input>
@@ -21,16 +22,21 @@
           <br/>
           <input type="text" class="z">(heigth in cm)</input>
           <br/>
-          <br/>
         </div>
+        <div class="button">
         <button  class="btn calc"">Calculate</button>
+        <br/>
+        <br/>
         <button class="btn again"">Again!</button>
+      </div>
       </section>
-
+    
+    
       <section class="right">
         <h6>! result !</h6><br/>
         <p class="amount"></p>
       </section>
+    </div>
     </main>
     <script src="script.js"></script>
   </body>
