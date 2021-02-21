@@ -133,7 +133,7 @@ header p {
   background-color: rgb(122, 158, 199);
 }
 
-@media only screen and (width: 620px) {
+@media only screen and (max-device-width: 680px) {
   header {
     position: relative;
     height: 140px;
