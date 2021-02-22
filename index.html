@@ -9,33 +9,31 @@
   </head>
 
   <body>
-    <header>
+    <header class="head">
       <div>
-      <h1>How much resin?</h1>
-      <p>- use cm and decimal . -</p>
-    </div>
+        <h1>How much resin?</h1>
+        <p>(use 'cm' and decimal '.')</p>
+      </div>
     </header>
 
     <main>
-    <div class="contain">
-
-      <div class="left">
-          <input type="text" class="x">
+      <div class="contain">
+        <div class="left">
+          <input type="text" class="x" />
           <p>(length in cm)</p>
-          <input  type="text" class="y">
+          <input type="text" class="y" />
           <p>(width in cm)</p>
-          <input type="text" class="z">
+          <input type="text" class="z" />
           <p>(height in cm)</p>
-          <br>
-          <button  class="btn calc"">Calculate</button>
-          <button class="btn again"">Again!</button>
+          <br />
+          <button class="btn calc">Calculate</button>
+          <button class="btn again">Again!</button>
+        </div>
+
+        <div class="right">
+          <p class="amount"></p>
+        </div>
       </div>
-      
-      <div class="right">
-        <p class="amount"></p>
-      </div>
-      
-    </div>
     </main>
 
     <script src="script.js"></script>
