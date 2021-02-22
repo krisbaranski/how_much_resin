@@ -33,7 +33,6 @@ main {
 }
 
 .left {
-  position: relative;
   width: 100px;
   padding: 20px;
   display: flex;
@@ -89,12 +88,10 @@ header p {
 }
 
 .again {
-  position: relative;
   padding-top: 20px;
 }
 
 .right {
-  position: relative;
   background: none;
   color: inherit;
   font-size: 5rem;
@@ -130,7 +127,7 @@ header p {
 @media only screen and (max-device-width: 720px) {
   header {
     position: relative;
-    height: 100px;
+    height: 90px;
   }
 
   main {
@@ -154,26 +151,23 @@ header p {
     text-align: center;
     position: relative;
     width: 100%;
-    top: 15px;
+    top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .left {
-    position: relative;
     display: flex;
     align-items: center;
   }
 
   .button {
-    position: relative;
     display: flex;
     align-items: center;
     padding-top: 20px;
   }
 
   .right {
-    position: relative;
     background: none;
     color: inherit;
     font-size: 30px;
