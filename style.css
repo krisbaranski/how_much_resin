@@ -1,18 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   color: rgb(202, 197, 197);
-  background: linear-gradient(to bottom left, #7c6972, #2a3552) no-repeat;
+  background: linear-gradient(to bottom left, #212f57, #889eb3, #212f57)
+    no-repeat;
   /* background-color: #60b347; */
 }
 
@@ -20,41 +20,18 @@ body {
 header {
   position: relative;
   height: 120px;
-  border-bottom: 3px solid rgb(146, 128, 128);
+  border-bottom: 3px solid rgb(31, 61, 85);
+  background-color: rgba(255, 255, 255, 0.219);
 }
 
 main {
-  color: rgb(194, 143, 143);
-  justify-content: space-around;
+  color: rgb(135, 175, 212);
+  height: 100%;
 }
 
 .contain {
   position: relative;
-}
-
-.left {
-  width: 100px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.left p {
-  text-align: center;
-  padding: 10px;
-}
-.value {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.x,
-.y,
-.z {
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 10px 0px;
-  margin: 10px 5px;
+  display: inline-table;
 }
 
 /* ELEMENTS STYLE */
@@ -78,7 +55,7 @@ h6 {
 
 header p {
   font-size: 2rem;
-  color: rgb(206, 171, 110);
+  color: rgb(207, 205, 202);
   text-align: center;
   position: relative;
   width: 100%;
@@ -87,16 +64,47 @@ header p {
   transform: translate(-50%, -50%);
 }
 
+.left {
+  position: relative;
+  margin-top: 0;
+  margin-left: 10%;
+  align-items: center;
+  width: 40%;
+  display: inline-table;
+  padding: 20px;
+}
+
+.left p {
+  text-align: inherit;
+  width: 150px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.x,
+.y,
+.z {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 10px 0px;
+  margin: 5px 5px;
+}
+
+.calc,
 .again {
+  margin: 10px 5px;
   padding-top: 20px;
 }
 
 .right {
+  position: relative;
+  width: 50%;
+  display: inline-table;
   background: none;
   color: inherit;
   font-size: 5rem;
+  margin-top: 50px;
   padding: 20px;
-  display: block;
 }
 
 .right p {
@@ -104,7 +112,7 @@ header p {
 }
 
 .amount {
-  border: 3px solid rgb(51, 27, 63);
+  border: 3px solid rgb(40, 66, 87);
   padding: 2rem 2rem;
 }
 
