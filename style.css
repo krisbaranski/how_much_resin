@@ -19,7 +19,7 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 140px;
+  height: 120px;
   border-bottom: 5px solid rgb(199, 191, 191);
 }
 
@@ -130,7 +130,7 @@ header p {
 @media only screen and (max-device-width: 720px) {
   header {
     position: relative;
-    height: 60px;
+    height: 90px;
   }
 
   main {
