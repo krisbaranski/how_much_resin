@@ -12,7 +12,6 @@ body {
   font-family: sans-serif;
   color: rgb(202, 197, 197);
   background: linear-gradient(#212f57, #889eb3, #212f57);
-  height: 100%;
   /* background-color: #60b347; */
 }
 
@@ -24,27 +23,26 @@ body {
 }
 
 .head p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 100;
   top: 40px;
   padding-top: 5px;
-  height: 30px;
+  height: 26px;
   background-color: rgb(40, 54, 75);
-}
-
-main {
-  color: rgb(135, 175, 212);
 }
 
 /* ELEMENTS STYLE */
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: rgb(40, 54, 75);
   text-align: center;
   position: relative;
   width: 100%;
-  top: 40px;
+  top: 30px;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 1px 1px 30px rgb(20, 19, 19);
+  text-shadow: 1px 1px 20px rgb(245, 245, 245);
 }
 
 h6 {
@@ -67,22 +65,20 @@ p {
 
 .contain {
   position: relative;
-  width: 100%;
-  display: inline-table;
+  text-align: center;
 }
 
 .left {
-  position: static;
-  width: 50%;
-  display: inline-table;
+  position: relative;
+
+  margin-left: 10px;
   padding: 20px;
-  width: 50%;
 }
 
 .left p {
   text-align: center;
-  padding: 10px;
-  font-size: 2rem;
+  padding: 1px 20px;
+  font-size: 1.5rem;
 }
 
 .x,
@@ -103,22 +99,25 @@ p {
 
 .right {
   position: relative;
-  display: inline-table;
-  width: 50%;
+  width: 275px;
+  max-width: 276px;
   background: none;
+  display: inline-table;
   color: inherit;
   font-size: 5rem;
+  margin: 20px 0px;
+}
+.amount {
+  border: 3px solid rgb(40, 54, 75);
   padding: 20px;
 }
 
 .right p {
   text-align: center;
-}
-
-.amount {
-  top: 150px;
-  border: 3px solid rgb(40, 66, 87);
-  padding: 2rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 20px;
+  margin: 50px 0px;
 }
 
 .btn {
@@ -164,13 +163,13 @@ p {
     transform: translate(-50%, -50%);
   }
 
-  .right {
+  .amount {
     font-size: 30px;
     padding: 10px;
     width: 100%;
   }
 
-  .right p {
+  .amount p {
     font-size: 3rem;
   }
 }
