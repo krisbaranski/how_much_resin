@@ -29,7 +29,6 @@ calc.addEventListener('click', function () {
 
 // again button reseting all
 document.querySelector('.again').addEventListener('click', function () {
-  document.querySelector('.value').value = '';
   document.querySelector('.x').value = '';
   document.querySelector('.y').value = '';
   document.querySelector('.z').value = '';
