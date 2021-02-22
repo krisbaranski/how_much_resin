@@ -19,7 +19,7 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 120px;
+  height: 140px;
   border-bottom: 5px solid rgb(199, 191, 191);
 }
 
@@ -34,8 +34,6 @@ main {
 
 .left {
   position: relative;
-  left: 25%;
-  transform: translate(25%);
   width: 100px;
   padding: 20px;
   display: flex;
