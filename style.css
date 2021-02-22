@@ -20,7 +20,7 @@ body {
 header {
   position: relative;
   height: 120px;
-  border-bottom: 5px solid rgb(199, 191, 191);
+  border-bottom: 3px solid rgb(146, 128, 128);
 }
 
 main {
@@ -104,7 +104,7 @@ header p {
 }
 
 .amount {
-  border: 4px solid #eee;
+  border: 3px solid rgb(51, 27, 63);
   padding: 2rem 2rem;
 }
 
