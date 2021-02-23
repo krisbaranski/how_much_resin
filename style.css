@@ -136,7 +136,7 @@ p {
   background-color: rgb(122, 158, 199);
 }
 
-@media only screen and (max-device-width: 720px) {
+/* @media only screen and (max-device-width: 720px) {
   header {
     position: relative;
     height: 90px;
@@ -171,5 +171,5 @@ p {
 
   .amount p {
     font-size: 3rem;
-  }
-}
+  } */
+/* } */
