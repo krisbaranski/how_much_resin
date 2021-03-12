@@ -32,5 +32,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.x').value = '';
   document.querySelector('.y').value = '';
   document.querySelector('.z').value = '';
-  message.textContent = 'Please fill all meassurements again';
+  message.textContent = 'Please fill again';
 });
