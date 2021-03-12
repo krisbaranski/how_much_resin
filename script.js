@@ -5,7 +5,7 @@ const message = document.querySelector('.amount');
 const calc = document.querySelector('.calc');
 
 // first message
-message.textContent = 'Please fill all meassurements';
+message.textContent = 'Please fill all numbers';
 
 // // values
 let x = (document.querySelector('.x').value = '');
@@ -23,7 +23,7 @@ calc.addEventListener('click', function () {
   if (amount > 0) {
     message.textContent = `Use ${amount} kg resin`;
   } else {
-    message.textContent = 'Please fill all meassurements';
+    message.textContent = 'Please fill all numbers';
   }
 });
 
