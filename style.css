@@ -18,12 +18,15 @@ body {
 
 .container {
   background-color: rgba(0, 0, 0, 0.205);
-  padding: 20px 60px;
+  padding: 20px 40px;
   border-radius: 5px;
 }
 
+.header {
+  text-align: center;
+}
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -87,14 +90,23 @@ p {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    position: relative;
-    top: 10px;
-    left: 50%;
-    width: 400px;
+@media screen and (max-width: 450px) {
+  .header {
+    top: 1px;
   }
 
+  .container {
+    position: relative;
+    top: 70px;
+    width: 350px;
+  }
+  /* .input {
+    position: relative;
+  } */
+
+  .calc {
+    margin-top: 30px;
+  }
   .btn {
     align-items: center;
     width: 90%;
