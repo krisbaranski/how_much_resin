@@ -90,6 +90,8 @@ p {
 @media screen and (max-width: 600px) {
   .container {
     position: relative;
+    top: 10px;
+    left: 50%;
     width: 400px;
   }
 
