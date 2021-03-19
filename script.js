@@ -1,20 +1,24 @@
 'use strict';
 
-// shortcuts
+// variables
 const message = document.querySelector('.amount');
-const calc = document.querySelector('.calc');
+const calcBtn = document.querySelector('.calc');
+const againBtn = document.querySelector('.again');
+const infoText = document.querySelector('.info');
+const btnCloseInfo = document.querySelector('.close-info');
+const btnOpenInfo = document.querySelector('.fas');
+const overlay = document.querySelector('.overlay');
 
-// first message
-message.textContent = 'Please fill all numbers';
-
-// // values
+// values
 let x = (document.querySelector('.x').value = '');
 let y = (document.querySelector('.y').value = '');
 let z = (document.querySelector('.z').value = '');
 
-// calculate button counting all together
+// first message
+message.textContent = 'Please fill all numbers';
 
-calc.addEventListener('click', function () {
+// calculate button counting all together
+calcBtn.addEventListener('click', function () {
   x = parseFloat(document.querySelector('.x').value);
   y = parseFloat(document.querySelector('.y').value);
   z = parseFloat(document.querySelector('.z').value);
@@ -28,9 +32,28 @@ calc.addEventListener('click', function () {
 });
 
 // again button reseting all
-document.querySelector('.again').addEventListener('click', function () {
+againBtn.addEventListener('click', function () {
   document.querySelector('.x').value = '';
   document.querySelector('.y').value = '';
   document.querySelector('.z').value = '';
   message.textContent = 'Please fill again';
+});
+
+btnOpenInfo.addEventListener('click', function () {
+  infoText.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+const closeInfo = function () {
+  infoText.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+overlay.addEventListener('click', closeInfo);
+btnCloseInfo.addEventListener('click', closeInfo);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !infoText.classList.contains('hidden')) {
+    closeInfo();
+  }
 });
