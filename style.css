@@ -1,46 +1,52 @@
+/*//////////////////////////*/
+/* Imported Font */
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+/*//////////////////////////*/
+/* Root settings */
 * {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
+/*//////////////////////////*/
+/* Body settings */
 body {
+  font-family: 'Muli', sans-serif;
   background-color: rgb(81, 122, 155);
   color: #fff;
-  font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  margin: 15px 0;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.205);
-  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.637);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 25px -8px rgba(0, 0, 0, 0.7);
   padding: 20px 40px;
   border-radius: 10px;
 }
 
-.header {
-  text-align: center;
-}
+/*//////////////////////////*/
+/* Font settings */
 h1 {
-  margin-bottom: 10px;
-  font-size: 33px;
+  text-align: center;
+  font-size: 3rem;
   font-family: inherit;
 }
 
 p {
   text-align: center;
-  color: lightblue;
 }
 
+/*//////////////////////////*/
+/* Input fields */
 .input {
   position: relative;
-  margin: 30px 0px;
-  max-width: 350px;
   align-items: center;
 }
 
@@ -51,27 +57,24 @@ p {
   border: 0;
   border-radius: 3px;
   display: block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   width: 100%;
   margin: 10px 0;
   padding: 15px;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: rgb(46, 43, 43);
 }
 
+/*//////////////////////////*/
+/* Buttons */
 .calc,
 .again {
   cursor: pointer;
-  display: inline-block;
-  align-items: baseline;
   background: lightblue;
   margin: 15px;
-  padding: 15px 35px;
+  padding: 15px 25px;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 1.7rem;
   border: 0;
   border-radius: 10px;
 }
@@ -87,18 +90,23 @@ p {
   transform: scale(0.98);
 }
 
+/*//////////////////////////*/
+/* Message */
 .amount {
-  font-size: 23px;
+  font-size: 2.4rem;
   font-family: inherit;
   text-align: center;
   margin: 20px 0;
   padding-top: 10px;
 }
 
+/*//////////////////////////*/
+/* Info icons */
 .fas {
-  position: relative;
-  right: -330px;
-  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  font-size: 2rem;
   cursor: pointer;
 }
 .fas:active {
@@ -111,13 +119,20 @@ p {
   color: rgb(81, 122, 155);
   border: 0;
 }
+.fa-info-circle {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
 
+/*//////////////////////////*/
+/* Info container and fonts */
 .info {
   position: absolute;
-  top: 53%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 370px;
   background-color: white;
   padding: 25px 40px;
   border-radius: 10px;
@@ -134,25 +149,19 @@ p {
 }
 
 .info p {
-  font-size: 15px;
+  font-size: 1.4rem;
   color: rgb(55, 83, 107);
   text-align: left;
 }
 
 .info a {
+  font-size: inherit;
   text-decoration: none;
   color: rgb(105, 177, 236);
 }
 
-.close-info {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-
-.hidden {
-  display: none;
-}
+/*//////////////////////////*/
+/* Blur overlay for info container */
 .overlay {
   position: absolute;
   top: 0;
@@ -164,50 +173,25 @@ p {
   z-index: 5;
 }
 
-@media screen and (max-width: 450px) {
-  body {
-    margin-top: 20px;
-  }
-  .header {
-    margin-top: 20px;
-  }
+.hidden {
+  display: none;
+}
 
+/*//////////////////////////*/
+/* Responsive settings for mobile */
+@media screen and (max-width: 380px) {
   h1 {
-    font-size: 23px;
+    font-size: 2.5rem;
     font-family: inherit;
   }
 
-  .container {
-    position: relative;
-    height: 100%;
-    width: auto;
+  .z {
+    margin-bottom: 20px;
   }
 
-  .z {
-    margin-bottom: 30px;
-  }
   .btn {
     align-items: center;
-    margin: 0 auto 10px;
+    margin: 5px auto;
     width: 100%;
-  }
-
-  .fas {
-    position: relative;
-    top: -500px;
-    right: -250px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .info {
-    width: 300px;
-  }
-
-  .close-info {
-    background-color: transparent;
-    position: absolute;
-    padding-top: 45px;
-    right: 10px;
   }
 }
