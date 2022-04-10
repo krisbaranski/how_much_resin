@@ -1,15 +1,12 @@
-/*//////////////////////////*/
 /* Imported Font */
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-/*//////////////////////////*/
 /* Root settings */
 * {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-/*//////////////////////////*/
 /* Body settings */
 body {
   font-family: 'Muli', sans-serif;
@@ -28,10 +25,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 25px -8px rgba(0, 0, 0, 0.7);
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(50, 76, 99, 0.6);
 }
 
-/*//////////////////////////*/
 /* Font settings */
 h1 {
   text-align: center;
@@ -45,7 +42,6 @@ p {
   font-family: inherit;
 }
 
-/*//////////////////////////*/
 /* Input fields */
 .input {
   position: relative;
@@ -67,7 +63,6 @@ p {
   color: rgb(46, 43, 43);
 }
 
-/*//////////////////////////*/
 /* Buttons */
 .calc,
 .again {
@@ -78,7 +73,8 @@ p {
   font-family: inherit;
   font-size: 1.7rem;
   border: 0;
-  border-radius: 10px;
+  border-radius: 25px;
+  /* width: 50%; */
 }
 
 .btn,
@@ -92,22 +88,20 @@ p {
   transform: scale(0.98);
 }
 
-/*//////////////////////////*/
 /* Message */
 .amount {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: inherit;
   text-align: center;
   margin: 20px 0;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
-/*//////////////////////////*/
 /* Info icons */
 .fas {
   position: absolute;
   right: 15px;
-  top: 30px;
+  top: 25px;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -121,25 +115,21 @@ p {
   color: rgb(81, 122, 155);
   border: 0;
 }
-.fa-info-circle {
-  position: absolute;
-  top: 25px;
-  right: 15px;
-}
 
-/*//////////////////////////*/
 /* Info container and fonts */
 .info {
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 370px;
+  width: 100%;
+  height: 100%;
   background-color: white;
   padding: 25px 40px;
   border-radius: 10px;
   box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.897);
   z-index: 10;
+  overflow: scroll;
 }
 
 .info h1 {
@@ -147,7 +137,7 @@ p {
   padding-bottom: 15px;
   text-align: center;
   color: rgb(81, 122, 155);
-  font-size: 24px;
+  font-size: 2.5rem;
 }
 
 .info p {
@@ -162,7 +152,6 @@ p {
   color: rgb(105, 177, 236);
 }
 
-/*//////////////////////////*/
 /* Blur overlay for info container */
 .overlay {
   position: absolute;
@@ -170,7 +159,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.274);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   z-index: 5;
 }
@@ -179,7 +168,6 @@ p {
   display: none;
 }
 
-/*//////////////////////////*/
 /* Responsive settings for mobile */
 @media screen and (max-width: 380px) {
   h1 {
