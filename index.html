@@ -15,50 +15,51 @@
   </head>
 
   <body>
-    <main>
-      <div class="container">
-        <h1>How much resin?</h1>
-        <p>(values in mm)</p>
-        <div class="input">
-          <input type="text" class="x" placeholder="length" />
-          <input type="text" class="y" placeholder="width" />
-          <input type="text" class="z" placeholder="height" />
+    <div class="container">
+      <h1>How much resin?</h1>
+      <p>(values in cm)</p>
+      <div class="input">
+        <input type="text" class="x" placeholder="length" />
+        <input type="text" class="y" placeholder="width" />
+        <input type="text" class="z" placeholder="height" />
 
-          <div>
-            <button class="btn calc">Calculate</button>
-            <button class="btn again">Again!</button>
-          </div>
-
-          <h2 class="text amount"></h2>
+        <div>
+          <button class="btn calc">Calculate</button>
+          <button class="btn again">Again!</button>
         </div>
-        <div class="fas fa-info-circle"></div>
+
+        <h2 class="text amount"></h2>
       </div>
-    </main>
-    <div class="info hidden">
-      <button class="close-info fas fa-times"></button>
-      <h1>How much resin</h1>
-      <p>
-        This calculator is designed for counting the amount of epoxy resin used
-        for casting.
-      </p>
-      <p>
-        For this you need to measure (in 'cm' and with '.' for decimals)
-        approximate length, width and height of the gap you want to cast. Then
-        fill in the input fields and push button 'calculate' :-)
-      </p>
-      <p>
-        The result is the exact amount of epoxy resin you need to use for
-        casting.
-      </p>
-      <p>I have used this method many times and it is always working great.</p>
-      <p>
-        I invite you to visit my
-        <a href="https://yugen-art.com" target="blank">page</a> and if you have
-        questions, dont hesitate to
-        <a href="mailto:info@yugen-art.com">contact</a>
-        me
-      </p>
-      <br />
+      <div class="fas fa-info-circle"></div>
+
+      <div class="info container hidden">
+        <button class="close-info fas fa-times"></button>
+        <h1>How much resin?</h1>
+        <p>
+          This calculator is designed for counting the amount of epoxy resin
+          used for casting.
+        </p>
+        <p>
+          For this you need to measure (in 'cm' and with '.' for decimals)
+          approximate length, width and height of the gap you want to cast. Then
+          fill in the input fields and push button 'calculate' :-)
+        </p>
+        <p>
+          The result is the exact amount of epoxy resin you need to use for
+          casting.
+        </p>
+        <p>
+          I have used this method many times and it is always working great.
+        </p>
+        <p>
+          I invite you to visit my
+          <a href="https://yugen-art.com" target="blank">page</a> and if you
+          have questions, dont hesitate to
+          <a href="mailto:info@yugen-art.com">contact</a>
+          me
+        </p>
+        <br />
+      </div>
     </div>
     <div class="overlay hidden"></div>
     <script src="script.js"></script>
