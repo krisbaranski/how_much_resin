@@ -1,6 +1,6 @@
 'use strict';
 
-// variables
+// Variables
 const message = document.querySelector('.amount');
 const calcBtn = document.querySelector('.calc');
 const againBtn = document.querySelector('.again');
@@ -9,40 +9,45 @@ const btnCloseInfo = document.querySelector('.close-info');
 const btnOpenInfo = document.querySelector('.fas');
 const overlay = document.querySelector('.overlay');
 
-let x = document.querySelector('.x');
-let y = document.querySelector('.y');
-let z = document.querySelector('.z');
+const length = document.querySelector('.x');
+const width = document.querySelector('.y');
+const height = document.querySelector('.z');
 
-(x.value = ''), (y.value = ''), (z.value = '');
+// First message
+message.textContent = 'Please fill all values';
+length.value = '';
+width.value = '';
+height.value = '';
 
-// first message
-message.textContent = 'Please fill all numbers';
-
-// calculate button counting all values together
+// Button 'Calculate' counting all values together
 calcBtn.addEventListener('click', function () {
-  x = parseFloat(x.value);
-  y = parseFloat(y.value);
-  z = parseFloat(z.value);
-  const n = (x * y * z) / 900000;
+  let x = parseFloat(length.value);
+  let y = parseFloat(width.value);
+  let z = parseFloat(height.value);
+  const n = (x * y * z) / 900;
   let amount = n.toFixed(2);
   if (amount > 0) {
     message.textContent = `Use ${amount} kg resin`;
   } else {
-    message.textContent = 'Please fill all numbers';
+    message.textContent = 'Please fill all values';
   }
 });
 
-// again button reset all values
+// Button 'Again' to reset all values
 againBtn.addEventListener('click', function () {
-  x, y, z;
+  length.value = '';
+  width.value = '';
+  height.value = '';
   message.textContent = 'Please fill again';
 });
 
+// Button 'Open Info' to show info
 btnOpenInfo.addEventListener('click', function () {
   infoText.classList.remove('hidden');
   overlay.classList.remove('hidden');
 });
 
+// Button 'Close Info' to hide info
 const closeInfo = function () {
   infoText.classList.add('hidden');
   overlay.classList.add('hidden');
@@ -51,6 +56,7 @@ const closeInfo = function () {
 overlay.addEventListener('click', closeInfo);
 btnCloseInfo.addEventListener('click', closeInfo);
 
+// Function to close info window when click outside the info field
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !infoText.classList.contains('hidden')) {
     closeInfo();
