@@ -9,20 +9,21 @@ const btnCloseInfo = document.querySelector('.close-info');
 const btnOpenInfo = document.querySelector('.fas');
 const overlay = document.querySelector('.overlay');
 
-// values
-let x = (document.querySelector('.x').value = '');
-let y = (document.querySelector('.y').value = '');
-let z = (document.querySelector('.z').value = '');
+let x = document.querySelector('.x');
+let y = document.querySelector('.y');
+let z = document.querySelector('.z');
+
+(x.value = ''), (y.value = ''), (z.value = '');
 
 // first message
 message.textContent = 'Please fill all numbers';
 
-// calculate button counting all together
+// calculate button counting all values together
 calcBtn.addEventListener('click', function () {
-  x = parseFloat(document.querySelector('.x').value);
-  y = parseFloat(document.querySelector('.y').value);
-  z = parseFloat(document.querySelector('.z').value);
-  const n = (x * y * z) / 900;
+  x = parseFloat(x.value);
+  y = parseFloat(y.value);
+  z = parseFloat(z.value);
+  const n = (x * y * z) / 900000;
   let amount = n.toFixed(2);
   if (amount > 0) {
     message.textContent = `Use ${amount} kg resin`;
@@ -31,11 +32,9 @@ calcBtn.addEventListener('click', function () {
   }
 });
 
-// again button reseting all
+// again button reset all values
 againBtn.addEventListener('click', function () {
-  document.querySelector('.x').value = '';
-  document.querySelector('.y').value = '';
-  document.querySelector('.z').value = '';
+  x, y, z;
   message.textContent = 'Please fill again';
 });
 
